@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>CollegeManagementSystem</display-name>
+
+<!-- Project Name -->
+    <display-name>College Management System</display-name>
+
+    <!-- Signup Servlet -->
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>com.college.servlet.SignupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.college.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>Loginpage.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+    <servlet-name>GalleryUploadServlet</servlet-name>
+    <servlet-class>com.college.servlet.GalleryUploadServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GalleryUploadServlet</servlet-name>
+    <url-pattern>/GalleryUploadServlet</url-pattern>
+</servlet-mapping>
+    
+    <!-- Dashboard Servlet -->
+<servlet>
+    <servlet-name>DashboardServlet</servlet-name>
+    <servlet-class>com.college.servlet.DashboardServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DashboardServlet</servlet-name>
+    <url-pattern>/DashboardServlet</url-pattern>
+</servlet-mapping>
+    
+</web-app>
